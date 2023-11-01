@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>instagram</title>
+    <link rel="stylesheet" type="text/css" href="insta.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="image-p"><img src="image1.png"></div>
+        <div class="inner-image">
+            <img id="image" src="image1.jpg" alt="Image 1">
+    
+            <script>
+                // JavaScript to change the image source after 5 second
+                const images = ["screenshot1.png", "screenshot2.png", "screenshot3.png", "screenshot4.png"]; // List of image filenames
+                let currentImageIndex = 0; // Index of the currently displayed image
+                const imageElement = document.getElementById("image"); // Get the img element
+        
+                function changeImage() {
+                    // Update the src attribute with the next image in the list
+                    imageElement.src = images[currentImageIndex];
+                    
+                    // Increment the index or reset to 0 if it exceeds the array length
+                    currentImageIndex = (currentImageIndex + 1) % images.length;
+                }
+        
+                // Change the image after 1 second
+                setInterval(changeImage, 1000); // 1000 milliseconds = 1 second
+            </script>
+        </div>
+        <div class="box">
+           <div class="heading"><h1>Instagram</h1></div>
+            <div class="box-un"><abbr><input type="searcbox" placeholder="  Phone number, username, or email"></div>
+            <div class="box-pass"><input type="password" placeholder="  password"></abbr></div>
+          <a href="https://www.instagram.com/"><div class="button"><button class="login-button"><p class="login">Log in</p></button></div></a>
+          <div class="or"><p></p></div>
+          <DIV class="DOWN-BOX"><p class="account">Don't have account?<b><a href=""> Sign up</a></b></p></DIV>
+        </div>
+    </div>
+    
+</body>
+</html>
